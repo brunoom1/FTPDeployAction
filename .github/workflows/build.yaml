@@ -5,7 +5,7 @@ jobs:
   test-action: 
     runs-on: ubuntu-latest
     steps:
-      - uses: ./../../actions.yaml
+      - uses: ./../../action.yaml
         with:
           hostname: ftp.engelux.com.br
           username: engelux
