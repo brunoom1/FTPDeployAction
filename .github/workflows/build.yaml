@@ -5,7 +5,7 @@ jobs:
   test-action: 
     runs-on: ubuntu-latest
     steps:
-      - uses: brunoom1/FTPDeployAction@latest
+      - uses: brunoom1/FTPDeployAction
         with:
           hostname: ftp.engelux.com.br
           username: engelux
