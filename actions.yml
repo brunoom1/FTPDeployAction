@@ -1,0 +1,36 @@
+name: "FTPDeployAction"
+author: Gabriel Mendonça
+description: "Automatizar deploy de projeto por FTP."
+inputs:
+  hostname: 
+    description: 'FTP Hostname'
+    required: true
+  
+  username:
+    description: 'FTP User'
+    required: true
+
+  password: 
+    description: 'FTp Password'
+    required: true
+
+  localDir: 
+    description: 'Diretório local'
+    required: false
+    default: '.'
+  
+  remoteDir:
+    description: "Diretório remoto"
+    required: false
+    default: '.'
+
+# outputs: 
+#   result: 
+#     description: "Resultado parcial "
+#     value: ""
+
+# runs: 
+#   using: "node16"
+#   main: "dist/main.js"
+#   pre: "tsc"
+#   post: "clearnup.js"
