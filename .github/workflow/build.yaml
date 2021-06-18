@@ -1,0 +1,12 @@
+name: Build test
+on: [push]
+
+jobs: 
+  test-action: 
+    runs-on: ubuntu-latest
+    steps: 
+      uses: ./../../actions.yaml
+      with:
+        hostname: ftp.engelux.com.br
+        username: engelux
+        password: engelux123
