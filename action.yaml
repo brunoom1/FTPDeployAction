@@ -23,14 +23,8 @@ inputs:
     description: "Diretório remoto"
     required: false
     default: '.'
-
-# outputs: 
-#   result: 
-#     description: "Resultado parcial "
-#     value: ""
-
-# runs: 
-#   using: "node16"
-#   main: "dist/main.js"
-#   pre: "tsc"
-#   post: "clearnup.js"
+runs: 
+  using: "composite"
+  steps:
+    - run: echo "Connect in FTP Server ${{ inputs.hostname }}"
+      shell: bash
